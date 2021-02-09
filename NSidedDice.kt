@@ -10,7 +10,6 @@ fun main() {
 class Dice(val numSides: Int) {
 
     fun roll(): Int {
-        val randomNumber = (1..numSides).random()
-        return randomNumber
+        return (1..numSides).random()
     }
 }

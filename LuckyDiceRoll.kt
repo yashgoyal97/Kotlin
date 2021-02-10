@@ -1,5 +1,5 @@
 fun main() {
-    val myFirstDice = Dice(6)
+    val myFirstDice = Dice(10)
     val rollResult = myFirstDice.roll()
     val luckyNumber = 4
 
@@ -11,7 +11,8 @@ fun main() {
         4 -> println("No luck! You rolled a 4. Try again!")
         5 -> println("Don't cry! You rolled a 5. Try again!")
         6 -> println("Apologies! you rolled a 6. Try again!")
-    }
+        else -> println("Sorry! you rolled a ${rollResult}. Better luck next time.")
+    } 
 }
 
 class Dice(val numSides: Int) {
